@@ -1,0 +1,14 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: dubbo3-consumer
+
+dubbo:
+  application:
+    name: dubbo3-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    serialization: protobuf
